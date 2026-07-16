@@ -4,18 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hesheneed Agriventure OPC - Sustainable Circular Systems</title>
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://jsdelivr.net"></script>
+    
+    <!-- Custom Style Fallbacks & Custom Colors -->
     <style>
-  body { background-color: #f9fafb; color: #1f2937; font-family: sans-serif; padding-top: 5rem; }
-  nav { background: #ffffff; position: fixed; top: 0; left: 0; w-full; width: 100%; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-bottom: 1px solid #f3f4f6; z-index: 50; }
-  .max-w-7xl { max-width: 80rem; margin: 0 auto; padding: 0 1rem; }
-  .flex { display: flex; justify-content: space-between; align-items: center; height: 5rem; }
-  h1 { font-size: 2.25rem; font-weight: 700; color: #111827; letter-spacing: -0.025em; margin-bottom: 1rem; }
-  h2 { font-size: 1.5rem; font-weight: 600; color: #1f2937; margin-top: 2rem; }
-</style>
+        /* Setup custom Tailwind colors using theme variables */
+        :root {
+            --color-agriGreen: #065f46;  /* emerald-800 */
+            --color-agriNavy: #022c22;   /* emerald-950 */
+            --color-agriGold: #fbbf24;   /* amber-400 */
         }
-    </script>
+        
+        body {
+            background-color: #f9fafb;
+            color: #1f2937;
+            font-family: sans-serif;
+            padding-top: 5rem;
+        }
+        nav {
+            background: #ffffff;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #f3f4f6;
+            z-index: 50;
+        }
+        .max-w-7xl {
+            max-width: 80rem;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 5rem;
+        }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #111827;
+            letter-spacing: -0.025em;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans tracking-wide">
 
@@ -33,64 +75,52 @@
                         <div class="absolute -bottom-1 -right-1 bg-amber-400 text-[10px] w-5 h-5 rounded-full flex items-center justify-center font-bold border-2 border-white shadow text-gray-950">🧪</div>
                     </div>
                     <div>
-                        <span class="block text-base font-extrabold text-agriGreen tracking-wider leading-none">HESHENEED</span>
+                        <span class="block text-base font-extrabold text-[var(--color-agriGreen)] tracking-wider leading-none">HESHENEED</span>
                         <span class="block text-[10px] font-bold text-amber-600 tracking-widest mt-1 uppercase">Agriventure OPC</span>
                     </div>
                 </div>
-                
                 <!-- Navigation Menus -->
                 <div class="hidden md:flex items-center space-x-6 font-semibold text-sm">
-                    <a href="#home" class="text-gray-600 hover:text-agriGreen transition">Home</a>
-                    <a href="#ecosystem" class="text-gray-600 hover:text-agriGreen transition">Our Operations</a>
-                    <a href="#flagship" class="text-gray-600 hover:text-agriGreen transition">Biostimulant</a>
-                    <a href="#calculator" class="text-gray-600 hover:text-agriGreen transition">Agronomy Utility</a>
-                    <a href="#contact" class="bg-agriGreen text-white px-4 py-2 rounded-lg hover:bg-emerald-800 transition shadow-sm">Get In Touch</a>
+                    <a href="#home" class="text-gray-600 hover:text-[var(--color-agriGreen)] transition">Home</a>
+                    <a href="#ecosystem" class="text-gray-600 hover:text-[var(--color-agriGreen)] transition">Our Operations</a>
+                    <a href="#flagship" class="text-gray-600 hover:text-[var(--color-agriGreen)] transition">Biostimulant</a>
+                    <a href="#calculator" class="text-gray-600 hover:text-[var(--color-agriGreen)] transition">Agronomy Utility</a>
+                    <a href="#contact" class="bg-emerald-800 text-white px-4 py-2 rounded-lg hover:bg-emerald-900 transition shadow-sm">Get In Touch</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="home" class="pt-40 pb-24 bg-gradient-to-br from-agriNavy to-emerald-950 text-white relative overflow-hidden">
+    <section id="home" class="pt-40 pb-24 bg-gradient-to-br from-emerald-950 to-emerald-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.08),transparent_50%)]"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center md:text-left md:flex items-center justify-between gap-12">
-            
             <div class="md:w-1/2 space-y-6">
-                <span class="bg-emerald-800/80 backdrop-blur-sm text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-emerald-700/50">
-                    Circular Agro-Industrial Ecosystem
-                </span>
-                <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight">
-                    Cultivating Tomorrow, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-300">Naturally.</span>
-                </h1>
-                <p class="text-base text-emerald-100/80 leading-relaxed max-w-xl">
-                    Integrating optimized banana and oil palm estates with sustainable duck livestock chains and premium, all-natural biostimulant manufacturing.
-                </p>
+                <span class="bg-emerald-800/80 backdrop-blur-sm text-emerald-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest border border-emerald-700/50"> Circular Agro-Industrial Ecosystem </span>
+                <h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-white"> Cultivating Tomorrow, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-300">Naturally.</span> </h1>
+                <p class="text-base text-emerald-100/80 leading-relaxed max-w-xl"> Integrating optimized banana and oil palm estates with sustainable duck livestock chains and premium, all-natural biostimulant manufacturing. </p>
                 <div class="pt-2 flex flex-wrap gap-4 justify-center md:justify-start">
-                    <a href="#flagship" class="bg-agriGold text-gray-950 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-amber-400 transition transform hover:-translate-y-0.5">Explore Fertilizer</a>
+                    <a href="#flagship" class="bg-amber-400 text-gray-950 font-bold px-6 py-3 rounded-xl shadow-lg hover:bg-amber-300 transition transform hover:-translate-y-0.5">Explore Fertilizer</a>
                     <a href="#contact" class="border border-emerald-600 text-emerald-300 font-semibold px-6 py-3 rounded-xl hover:bg-emerald-900/50 transition">B2B Distribution</a>
                 </div>
             </div>
-
             <!-- LARGE SCREEN DISPLAY CORPORATE LOGO HUB -->
             <div class="md:w-5/12 mt-12 md:mt-0 flex justify-center">
                 <div class="relative w-80 h-80 lg:w-96 lg:h-96 bg-gradient-to-b from-emerald-900/40 to-emerald-950/60 rounded-3xl p-8 border border-emerald-500/20 backdrop-blur-md flex flex-col items-center justify-center text-center shadow-2xl">
                     <!-- Outer rotating orbit simulation -->
-                    <div class="absolute inset-4 border-2 border-dashed border-emerald-500/10 rounded-full animate-[spin_40s_linear_infinite]"></div>
-                    
+                    <div class="absolute inset-4 border-2 border-dashed border-emerald-500/10 rounded-full"></div>
                     <!-- Core Visual Insignia Shield -->
                     <div class="w-32 h-32 bg-gradient-to-br from-emerald-700 to-emerald-900 rounded-3xl shadow-xl flex items-center justify-center border-2 border-emerald-400/30 relative mb-4">
                         <span class="text-6xl select-none">🌱</span>
                         <div class="absolute -bottom-2 -right-2 bg-gradient-to-br from-amber-400 to-amber-500 text-gray-950 text-2xl w-12 h-12 rounded-2xl flex items-center justify-center font-black border-4 border-emerald-950 shadow-lg">🧪</div>
                     </div>
-                    
-                    <h2 class="text-xl font-black text-white tracking-widest uppercase leading-none">HESHENEED</h2>
-                    <p class="text-xs font-bold text-agriGold tracking-widest uppercase mt-2">Agriventure OPC</p>
+                    <h2 class="text-xl font-black text-white tracking-widest uppercase leading-none mt-0">HESHENEED</h2>
+                    <p class="text-xs font-bold text-amber-400 tracking-widest uppercase mt-2">Agriventure OPC</p>
                     <div class="mt-4 flex items-center justify-center space-x-2 text-[11px] text-emerald-200/60 uppercase tracking-widest font-semibold border-t border-emerald-800/60 pt-3 w-48">
                         <span>Crops</span> • <span>Livestock</span> • <span>Bio-Tech</span>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -98,26 +128,21 @@
     <section id="ecosystem" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
             <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Structural Assets</span>
-            <h2 class="text-3xl font-black text-gray-900 md:text-4xl tracking-tight">Our Integrated Production Value Chain</h2>
-            <div class="h-1 w-16 bg-agriGreen mx-auto rounded-full"></div>
-            <p class="text-sm text-gray-500 max-w-2xl mx-auto">
-                By recycling nutrient matrices between our cash crop estates and animal husbandry fields, we slash standard production input vulnerabilities.
-            </p>
+            <h2 class="text-3xl font-black text-gray-900 md:text-4xl tracking-tight mt-0">Our Integrated Production Value Chain</h2>
+            <div class="h-1 w-16 bg-emerald-800 mx-auto rounded-full"></div>
+            <p class="text-sm text-gray-500 max-w-2xl mx-auto"> By recycling nutrient matrices between our cash crop estates and animal husbandry fields, we slash standard production input vulnerabilities. </p>
         </div>
-
+        
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Segment 1: Banana & Palm -->
             <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
                 <div>
                     <div class="w-14 h-14 bg-amber-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🍌</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Banana & Oil Palm Estates</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        High-yield intensive plantations optimized for regional crop distribution metrics. We deploy specialized, target-driven disease management frameworks protecting key soil micro-biomes.
-                    </p>
+                    <p class="text-sm text-gray-600 leading-relaxed"> High-yield intensive plantations optimized for regional crop distribution metrics. We deploy specialized, target-driven disease management frameworks protecting key soil micro-biomes. </p>
                 </div>
                 <div class="mt-8 pt-4 border-t border-gray-50 text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center justify-between">
-                    <span>Crop Production Hub</span>
-                    <span>🌴</span>
+                    <span>Crop Production Hub</span> <span>🌴</span>
                 </div>
             </div>
 
@@ -126,16 +151,3 @@
                 <div>
                     <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🦆</div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Commercial Duck Farms</h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Ethically operated open-canopy poultry setups generating stable commercial egg and premium meat products. The organic waste byproduct streams are captured to seed raw manufacturing media.
-                    </p>
-                </div>
-                <div class="mt-8 pt-4 border-t border-gray-50 text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center justify-between">
-                    <span>Livestock Lifecycle</span>
-                    <span>🥚</span>
-                </div>
-            </div>
-
-            <!-- Segment 3: Manufacturing -->
-            <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                <div>
